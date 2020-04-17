@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+body, html{
+	margin: 0;
+	padding: 0;
+	background: #eee;
+	height: 100vh;
+	display: flex-grid;
+/*	place-content: center;*/
+	font-family: sans-serif; 
+}
+.storys__perfil--myperfil{
+	background: #fff;
+}
+@media screen and (max-width: 380px) {
+.header{
+	position: relative;
+	background:white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+.header__logo{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 10vh;
+	float: 0;
+}
+.header__logo__img{
+	width: 80%;
+}
+.fa-paper-plane{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right:3%;
+}
+.storys{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.storys__perfil, .storys__perfil--active, .storys__perfil--myperfil{
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin: 2%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.storys__perfil__img{
+	position: relative;
+	width: 100%;
+	height: 100%;	
+}
+.storys__perfil--active{
+	border: 2px solid #ec0176;
+}
+.card{
+	position: relative;
+	margin: auto;
+	margin-bottom: 5%;
+	width: 95%;
+	height: 90vh;
+	border-radius: 10px;
+	overflow: hidden;
+	background: white;
+
+}
+.card__header{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 10vh;
+	background:white;
+	padding: 0.5% 0;
+}
+.card__header__perfil{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin-left: 2%;
+}
+.card__header__perfil__profile{
+	position: relative;
+	width: 100%;
+	height: 100%;		
+}
+.fa-ellipsis-h{
+	margin-right: 5%;
+}
+.card__name{
+	position: absolute;
+	margin-left: 20%;
+}
+.card__content{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 60vh;
+	overflow: hidden;
+}
+.card__content__photo__feed{
+	position: relative;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+.card__content__interacao{
+	position: relative;
+	display: flex;
+	align-items: center;	
+	width: 100%;
+	height: 10vh;
+	margin: 0;
+}
+.card__content__interacao > i{
+	margin: 0 3%;
+}
+.fa-bookmark{
+	position: absolute;
+	float: right;
+	right: 0;
+	
+}
+.card__footer{
+	position: relative;
+	display: flex;
+	align-items: center;	
+	width: 100%;
+	height: 10vh;
+	margin: 0;
+	background:#E8E8E8;
+}
+.card__footer__perfil{
+	position: relative;
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin-left: 2%;
+}
+.card__footer__perfil__profile{
+	position: relative;
+	width: 100%;
+	height: 100%;		
+}
+.card__footer > p{
+	font-size: 12px;
+	margin-left: 2%;
+}
+.card__footer > p > span{
+	font-weight: bold;
+}
+
+}
+
+@media screen and (min-width: 381px) and (max-width: 680px){
+.header{
+	position: relative;
+	background:white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+.header__logo{
+	position: relative;
+	display: flex;
+	width: 40%;
+	height: 10vh;
+	left: 2%;
+}
+.header__logo__img{
+	width: 60%;
+}
+.fa-paper-plane{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right:3%;
+}
+.storys{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.storys__perfil, .storys__perfil--active, .storys__perfil--myperfil{
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin: 2%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.storys__perfil__img{
+	position: relative;
+	width: 100%;
+	height: 100%;	
+}
+.storys__perfil--active{
+	border: 3px solid #ec0176;
+}
+.card{
+	position: relative;
+	margin: auto;
+	margin-bottom: 5%;
+	width: 95%;
+	border-radius: 10px;
+	overflow: hidden;
+	background: white;
+
+}
+.card__header{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 10vh;
+	background:white;
+	padding: 0.5% 0;
+}
+.card__header__perfil{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin-left: 2%;
+}
+.card__header__perfil__profile{
+	position: relative;
+	width: 100%;
+	height: 100%;		
+}
+.fa-ellipsis-h{
+	margin-right: 5%;
+}
+.card__name{
+	position: absolute;
+	left: 15%;
+}
+.card__content{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 80vh;
+	overflow: hidden;
+}
+.card__content__photo__feed{
+	position: relative;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+.card__content__interacao{
+	position: relative;
+	display: flex;
+	align-items: center;	
+	width: 100%;
+	height: 10vh;
+	margin: 0;
+}
+.card__content__interacao > i{
+	margin: 0 3%;
+}
+.fa-bookmark{
+	position: absolute;
+	float: right;
+	right: 0;
+	
+}
+.card__footer{
+	position: relative;
+	display: flex;
+	align-items: center;	
+	width: 100%;
+	height: 10vh;
+	margin: 0;
+	background:#E8E8E8;
+}
+.card__footer__perfil{
+	position: relative;
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin-left: 2%;
+}
+.card__footer__perfil__profile{
+	position: relative;
+	width: 100%;
+	height: 100%;		
+}
+.card__footer > p{
+	font-size: 12px;
+	margin-left: 2%;
+}
+.card__footer > p > span{
+	font-weight: bold;
+}
+
+}
+
+@media screen and (min-width: 681px) and (max-width: 900px){
+.header{
+	position: relative;
+	background:white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+.header__logo{
+	position: relative;
+	display: flex;
+	width: 40%;
+	height: 10vh;
+	left: 2%;
+}
+.header__logo__img{
+	width: 60%;
+}
+.fa-paper-plane{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right:3%;
+}
+.storys{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	left: 2%;
+}
+.storys__perfil, .storys__perfil--active, .storys__perfil--myperfil{
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin: 0.5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.storys__perfil__img{
+	position: relative;
+	width: 100%;
+	height: 100%;	
+}
+.storys__perfil--active{
+	border: 3px solid #ec0176;
+}
+.card{
+	position: relative;
+	margin: auto;
+	margin-bottom: 5%;
+	width: 95%;
+	border-radius: 10px;
+	overflow: hidden;
+	background: white;
+
+}
+.card__header{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 10vh;
+	background:white;
+	padding: 0.5% 0;
+}
+.card__header__perfil{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin-left: 2%;
+}
+.card__header__perfil__profile{
+	position: relative;
+	width: 100%;
+	height: 100%;		
+}
+.fa-ellipsis-h{
+	margin-right: 5%;
+}
+.card__name{
+	position: absolute;
+	left: 10%;
+}
+.card__content{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 90vh;
+	overflow: hidden;
+}
+.card__content__photo__feed{
+	position: relative;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+.card__content__interacao{
+	position: relative;
+	display: flex;
+	align-items: center;	
+	width: 100%;
+	height: 10vh;
+	margin: 0;
+}
+.card__content__interacao > i{
+	margin: 0 3%;
+}
+.fa-bookmark{
+	position: absolute;
+	float: right;
+	right: 0;
+	
+}
+.card__footer{
+	position: relative;
+	display: flex;
+	align-items: center;	
+	width: 100%;
+	height: 10vh;
+	margin: 0;
+	background:#E8E8E8;
+}
+.card__footer__perfil{
+	position: relative;
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin-left: 2%;
+}
+.card__footer__perfil__profile{
+	position: relative;
+	width: 100%;
+	height: 100%;		
+}
+.card__footer > p{
+	font-size: 12px;
+	margin-left: 2%;
+}
+.card__footer > p > span{
+	font-weight: bold;
+}
+
+}
+
+@media screen and (min-width: 900px){
+.header{
+	position: relative;
+	background:white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+.header__logo{
+	position: relative;
+	display: flex;
+	width: 40%;
+	height: 10vh;
+	left: 2%;
+}
+.header__logo__img{
+	width: 30%;
+}
+.fa-paper-plane{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right:3%;
+}
+.storys{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+
+}
+.storys__perfil, .storys__perfil--active, .storys__perfil--myperfil{
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin:0.5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.storys__perfil__img{
+	position: relative;
+	width: 100%;
+	height: 100%;	
+}
+.storys__perfil--active{
+	border: 3px solid #ec0176;
+}
+.card{
+	position: relative;
+	margin: auto;
+	margin-bottom: 5%;
+	width: 70%;
+	border-radius: 10px;
+	overflow: hidden;
+	background: white;
+
+
+}
+.card__header{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 10vh;
+	background:white;
+	padding: 0.5% 0;
+}
+.card__header__perfil{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin-left: 2%;
+}
+.card__header__perfil__profile{
+	position: relative;
+	width: 100%;
+	height: 100%;		
+}
+.fa-ellipsis-h{
+	margin-right: 5%;
+}
+.card__name{
+	position: absolute;
+	left: 10%;
+}
+.card__content{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+.card__content__photo__feed{
+	position: relative;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+.card__content__interacao{
+	position: relative;
+	display: flex;
+	align-items: center;	
+	width: 100%;
+	height: 10vh;
+	margin: 0;
+}
+.card__content__interacao > i{
+	margin: 0 3%;
+}
+.fa-bookmark{
+	position: absolute;
+	float: right;
+	right: 0;
+	
+}
+.card__footer{
+	position: relative;
+	display: flex;
+	align-items: center;	
+	width: 100%;
+	height: 10vh;
+	margin: 0;
+	background:#E8E8E8;
+}
+.card__footer__perfil{
+	position: relative;
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin-left: 2%;
+}
+.card__footer__perfil__profile{
+	position: relative;
+	width: 100%;
+	height: 100%;		
+}
+.card__footer > p{
+	font-size: 12px;
+	margin-left: 2%;
+}
+.card__footer > p > span{
+	font-weight: bold;
+}
+
+}
